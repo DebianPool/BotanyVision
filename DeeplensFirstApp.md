@@ -9,7 +9,8 @@
 2. What is the minimum amount of data to determine if plant is poisonous?
 
 ## Data
-### Which type of data is necessary\? 
+### Which type of data is necessary? 
+
 	1. Historical image data of both poisonous and non poisonous plants?
 	2. Levels of descriptors in Data Tables or Database?
 	3. Heuristics (Rules of Thumb) e.g. (Poison Ivy does not thorns)
@@ -39,6 +40,7 @@
 		3.
 
 ### Goals
+
 	1. Success Goal. Is Deeplens able to identify: 
 		1. Poison Ivy, Poison Oak, and Poison Sumac that would be obvious to humans who 
 	have been shown the same photo data?
@@ -49,6 +51,7 @@
 		2. Oak, Pine, and Magnolia trees.
 
 ## The Models (Math) and Algorithms (Computer programs)
+
 * Which models can we use?
 	* Is dimensional or data reduction needed?
 	* Human Chosen
@@ -68,7 +71,7 @@
 	4. Open Source. Apache Spark	
 * What will we do...?
 
-## Project execution 
+## Project execution Plan
 
 1. Obtain data
 	1. Get images of plants from internet
@@ -99,9 +102,26 @@
 	2. Github
 	3. API endpoint?			 
 	
-		 	
-By I, Melissambwilkins, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2481847
+## Project execution
 
-By JESpencer - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=36302853
+1. Set up Github repo
+	* BotanyVision
+	* Write up documentation and project plan.
+	* Back up all code
+	* Place photo data or links to S3
+2. Provision S3 buckets
+	* Photo data placed
+3. Grab Data sets
+	1. Training - Encyclopedia data
+	2. Web image data - google search and Bing search
+4. Use SageMaker image classifier model
+5. Use Deeplens on leaves from back yard		
 
-By Jarek Tuszyński / CC-BY-3.0 & GDFL, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=10787324
+## Attribution
+
+* Data Sets: http://otmedia.lirmm.fr/LifeCLEF/PlantCLEF2017/TrainPackages/
+
+* Photos:	
+	* By I, Melissambwilkins, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2481847
+	* By JESpencer - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=36302853
+	* By Jarek Tuszyński / CC-BY-3.0 & GDFL, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=10787324
